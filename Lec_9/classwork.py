@@ -1,7 +1,9 @@
 import simprule as s
+import math
 
 def f(x):
-    return 10-3*x*x
+    return math.log(x)
+    #return 4*pow(x,3)
 
-print("Area= ", s.simp(-1,3,f,4))
-print("From analytic calculation we get 12")  #10x-x^3  =  30-27--10---1 =12
+print("Area= ", s.simp(1,5,f,4))
+print("From analytic calculation we get 4.04718956217")
